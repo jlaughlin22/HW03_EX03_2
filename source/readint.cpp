@@ -21,7 +21,7 @@ int read_int(const string &prompt, int low, int high) //read_int() function with
         {
             cout << prompt;
             cin >> number_in_range;
-            if ( !(number_in_range <= high && number_in_range >= low) ) //if number entered is not within range
+            if ( !(number_in_range <= high && number_in_range >= low) ) //if number entered is not within range // was not grabbing numbers outside of range so i edited it
             {
                 throw range_error("Number entered is outside of the range");
             }
